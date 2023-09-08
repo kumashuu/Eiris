@@ -1,1 +1,98 @@
-/*# sourceMappingURL=style.css.map */
+#header {
+  width: 100%;
+  max-width: 1512px;
+  z-index: 5;
+}
+#header .head {
+  width: 100%;
+  flex-direction: row;
+  padding: 80px 64px 0 64px;
+  justify-content: space-between;
+}
+#header .head-left {
+  width: 117px;
+  height: 53px;
+}
+#header .head-right {
+  max-width: 100%;
+  flex-direction: row;
+  gap: 15px;
+  white-space: nowrap;
+}
+#header .head-right p {
+  color: #000;
+  font-family: League Spartan;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+#header .head-btn {
+  width: 150px;
+  z-index: 3;
+  display: none;
+  font-size: 32px;
+}
+#header .head-btn #menu-button {
+  font-size: 32px;
+}
+#header .head-mobile {
+  display: none;
+  position: fixed;
+  width: 70%;
+  height: 800px;
+  background: #ffffff;
+  padding: 280px 0px 300px 130px;
+  left: 30%;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 2;
+  flex: 1;
+}
+#header .head-mobile p {
+  color: #000000;
+  font-family: var(--s-font-838e4801);
+  font-size: 16px;
+  font-weight: 500;
+  height: auto;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+#header .head-mobile .contact {
+  overflow: hidden;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 20px;
+  justify-content: center;
+  white-space: nowrap;
+  overflow: visible;
+}
+#header .head-mobile .contact a {
+  background: #FFFFFF;
+  border: 1px solid #000;
+  border-radius: 4px;
+  padding: 12px 32px;
+}
+#header .head-mobile .contact .contact-dl p {
+  margin-top: 0;
+  color: #000000;
+}
+#header .head-mobile .contact .contact-dl2 {
+  background-color: #000000;
+}
+#header .head-mobile .contact .contact-dl2 p {
+  margin-top: 0;
+  color: #ffffff;
+}
+#header .head-mobile .smoke {
+  width: 30%;
+  height: 900px;
+  background-color: #626262;
+  position: fixed;
+  left: 0;
+  opacity: 0.3;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */
