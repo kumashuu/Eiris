@@ -4,9 +4,11 @@
     height: 144px;
     z-index: 5;
     justify-content: center;
+    margin: 0 auto;
 
     .head {
-        width: 100%;
+        width: 1512px;
+        max-width: 1512px;
         flex-direction: row;
         padding: 0 40px;
         justify-content: space-between;
@@ -28,7 +30,7 @@
 
             p {
                 color: #000;
-                font-family: League Spartan;
+
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 300;
@@ -140,13 +142,11 @@
 
 
 
-//フォントサイズ確認
 #section1 {
     width: 1512px;
     max-width: 100%;
     margin: 0 auto;
     height: 822px;
-    background-color: #f4f2fe;
     overflow: hidden;
 
     .section1-container {
@@ -154,12 +154,14 @@
         max-width: 100%;
         height: 100%;
 
+
         .main-text {
             position: relative;
             top: 254px;
             left: 114px;
             white-space: nowrap;
-            font-family: League Spartan;
+
+            // font-family:Arial, Helvetica, sans-serif;
             font-size: 156px;
             font-style: normal;
             font-weight: 300;
@@ -182,8 +184,24 @@
             }
         }
 
-        .line {
+        .effect1 {
+            width: 100%;
+            right: 270px;
+            bottom: 232px;
+        }
 
+        .effect2 {
+            width: 100%;
+            border: #000 3px solid;
+        }
+
+        .effect3 {
+            width: 100%;
+            right: 270px;
+            bottom: 232px;
+        }
+
+        .line {
             width: 230px;
             height: 1px;
             flex-shrink: 0;
@@ -198,7 +216,6 @@
     width: 1512px;
     max-width: 100%;
     margin: 0 auto;
-    border-bottom: #3E0070 1px solid;
 
     .section2-container {
         padding-top: 160px;
@@ -627,4 +644,38 @@
 select#classification option.default {
     color: #888;
     /* グレー色に設定 */
+}
+
+#footer {
+    height: 190px;
+    width: 1512px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    .footer-container {
+        height: 190px;
+        width: 1512px;
+        max-width: 100%;
+        background-color: #000;
+        gap: 16px;
+        justify-content: center;
+
+        img {
+            width: 117px;
+            height: 53px;
+        }
+
+        .copy {
+            color: #FFF;
+            font-family: A-OTF Gothic BBB Pr6;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 200%;
+            /* 24px */
+            letter-spacing: 0.6px;
+        }
+
+
+    }
 }
