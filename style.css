@@ -1,7 +1,7 @@
 @charset "UTF-8";
 #header {
   width: 1512px;
-  max-width: 100%;
+  max-width: 1512px;
   justify-content: center;
   margin: 0 auto;
 }
@@ -13,21 +13,24 @@
   justify-content: space-between;
 }
 #header .head-left {
+  padding-top: 40px;
   width: 117px;
   height: 53px;
   justify-content: flex-start;
   position: fixed;
-  top: 45px;
-  left: 40px;
+  top: 0px;
 }
 #header .head-right {
   max-width: 100%;
   flex-direction: row;
   gap: 15px;
   white-space: nowrap;
+  padding-top: 50px;
+  padding-right: 40px;
   position: fixed;
-  top: 55px;
-  right: 40px;
+  top: 0px;
+  right: 0;
+  justify-content: end;
 }
 #header .head-right p {
   color: #000;
@@ -111,7 +114,7 @@
   max-width: 100%;
   margin: 0 auto;
   height: 822px;
-  overflow: hidden;
+  overflow: visible;
 }
 #section1 .section1-container {
   width: 100%;
@@ -119,9 +122,9 @@
   height: 100%;
 }
 #section1 .section1-container .main-text {
-  position: relative;
+  position: absolute;
   top: 254px;
-  left: 156px;
+  left: 200px;
   white-space: nowrap;
   z-index: 20;
   font-family: League Spartan;
@@ -166,27 +169,46 @@
 #section1 .section1-container .effect1 {
   position: absolute;
   width: 100%;
-  top: 0px;
   right: 250px;
-  bottom: 600px;
+  bottom: 230px;
 }
 #section1 .section1-container .effect2 {
   position: absolute;
+  left: 800px;
+  bottom: 30px;
   width: 889px;
   height: 643px;
-  flex-shrink: 0;
   border-radius: 889px;
-  background: radial-gradient(50% 50% at 50% 50%, #FFF1EA 0.01%, rgba(253, 253, 253, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #000 0.01%, rgba(253, 253, 253, 0) 100%);
   mix-blend-mode: multiply;
-  top: 104px;
-  left: 1000px;
+  z-index: 1;
+  flex-shrink: 0;
 }
 #section1 .section1-container .effect3 {
-  width: 100%;
+  position: absolute;
+  left: 800px;
+  top: 500px;
+  width: 737px;
+  height: 643px;
+  flex-shrink: 0;
+  border-radius: 737px;
+  background: radial-gradient(50% 50% at 50% 50%, #efa81a 0.01%, rgba(253, 253, 253, 0) 100%);
+  mix-blend-mode: lighten;
+}
+#section1 .section1-container .effect4 {
+  position: absolute;
+  left: 650px;
+  top: 700px;
+  width: 737px;
+  height: 643px;
+  flex-shrink: 0;
+  border-radius: 737px;
+  background: radial-gradient(50% 50% at 50% 50%, #08a9ee 0%, #1982ac 0.01%, rgba(253, 253, 253, 0) 100%);
+  mix-blend-mode: lighten;
 }
 
 #section2 {
-  width: 1512px;
+  width: 1040px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -211,6 +233,7 @@
   -webkit-text-fill-color: transparent;
 }
 #section2 .section2-container .text {
+  width: 65%;
   font-family: A-OTF Gothic BBB Pr6;
   font-size: 18px;
   font-style: normal;
@@ -221,6 +244,27 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+#section2 .section2-container .effect5 {
+  position: absolute;
+  left: 400px;
+  bottom: 100px;
+  width: 1092px;
+  height: 643px;
+  flex-shrink: 0;
+  border-radius: 1092px;
+  background: radial-gradient(50% 50% at 50% 50%, #F3FBFF 0%, #F8FBFF 36.98%, rgba(253, 253, 253, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #1287c1 0%, #19539f 36.98%, rgba(253, 253, 253, 0) 100%);
+  mix-blend-mode: multiply;
+}
+#section2 .section2-container .line {
+  bottom: 100px;
+  left: -200px;
+  width: 230px;
+  height: 1px;
+  flex-shrink: 0;
+  background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
+  position: absolute;
 }
 
 #section3 {
@@ -247,7 +291,30 @@
   position: relative;
   right: 5%;
 }
+#section3 .section3-container .effect6::before {
+  content: "";
+  position: absolute;
+  right: 180px;
+  top: -120px;
+  width: 622px;
+  height: 491.724px;
+  flex-shrink: 0;
+  background: url(/Eiris_d/images/effect6.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
+}
+#section3 .section3-container .effect6::after {
+  content: "";
+  position: absolute;
+  right: 180px;
+  top: 0px;
+  width: 664px;
+  height: 380px;
+  flex-shrink: 0;
+  border-radius: 664px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #a8804f 0%, #bd2a9d 0.01%, #f74b4b 28.13%, rgba(253, 253, 253, 0) 100%);
+}
 #section3 .section3-container .line {
+  top: 10px;
   left: 7%;
   width: 230px;
   height: 1px;
@@ -262,6 +329,18 @@
 }
 #section3 .section3-container .main img {
   flex-shrink: 0;
+}
+#section3 .section3-container .main .effect7::before {
+  content: "";
+  position: absolute;
+  right: -160px;
+  top: -10px;
+  width: 447.419px;
+  height: 206.084px;
+  flex-shrink: 0;
+  border-radius: 447.419px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #cb1e1e 28.13%, rgba(253, 253, 253, 0) 100%);
+  mix-blend-mode: multiply;
 }
 #section3 .section3-container .main .main-right {
   width: 55%;
@@ -335,6 +414,51 @@
   margin-top: 120px;
   padding-bottom: 120px;
 }
+#section3 .section3-container .main03 .effect8::before {
+  content: "";
+  position: absolute;
+  left: -221px;
+  top: -239px;
+  width: 495px;
+  height: 449px;
+  border-radius: 495px;
+  background: radial-gradient(50% 50% at 50% 50%, #fe9d27 0%, #FFF6FD 0.01%, #cf1f1f 28.13%, rgba(253, 253, 253, 0) 100%);
+  mix-blend-mode: multiply;
+}
+#section3 .section3-container .main03 .effect8::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  left: -200px;
+  width: 230px;
+  height: 1px;
+  flex-shrink: 0;
+  background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
+  bottom: 300px;
+}
+#section3 .section3-container .main03 .effect9::before {
+  content: "";
+  position: absolute;
+  left: 800px;
+  top: -200px;
+  width: 664px;
+  height: 380px;
+  flex-shrink: 0;
+  border-radius: 664px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #e26b6b 28.13%, rgba(253, 253, 253, 0) 100%);
+  z-index: 1;
+}
+#section3 .section3-container .main03 .effect9::after {
+  content: "";
+  position: absolute;
+  left: 800px;
+  top: -300px;
+  width: 622px;
+  height: 491.724px;
+  flex-shrink: 0;
+  border-radius: 664px;
+  background: url(/Eiris_d/images/effect9-after.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
+}
 #section3 .section3-container .sub01 {
   margin-top: 72px;
   gap: 32px;
@@ -398,8 +522,19 @@
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
 }
-#section-table .section-table-container .line {
+#section-table .section-table-container .line::before {
+  content: "";
   width: 47px;
+  height: 1px;
+  flex-shrink: 0;
+  background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
+}
+#section-table .section-table-container .line::after {
+  content: "";
+  position: absolute;
+  left: 440px;
+  top: 160px;
+  width: 230px;
   height: 1px;
   flex-shrink: 0;
   background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
@@ -452,6 +587,12 @@
   max-width: 100%;
   margin: 0 auto;
 }
+#section-form .img {
+  width: 100%;
+  position: absolute;
+  left: 450px;
+  top: -220px;
+}
 #section-form .section-form-container {
   margin: 0 32px;
   width: 1040px;
@@ -462,7 +603,7 @@
 #section-form .section-form-container .section-text {
   margin-left: 104px;
   position: relative;
-  right: 52%;
+  right: 45%;
   font-family: League Spartan;
   font-size: 96px;
   font-style: normal;
