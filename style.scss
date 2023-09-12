@@ -391,8 +391,7 @@
             top: -120px;
             width: 622px;
             height: 491.724px;
-            flex-shrink: 0;
-            background: url(/Eiris_d/images/effect6.png), lightgray 0px -61.307px / 100% 189.718% no-repeat;
+            background: url(images/effect9-after.png), lightgray 0px -61.307px / 100% 189.718% no-repeat;
         }
 
         .effect6::after {
@@ -568,16 +567,16 @@
                 background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #e26b6b 28.13%, rgba(253, 253, 253, 0.00) 100%);
                 z-index: 1;
             }
+
             .effect9::after {
                 content: "";
                 position: absolute;
-                left: 800px;
+                left: 750px;
                 top: -300px;
                 width: 622px;
-height: 491.724px;
+                height: 491.724px;
                 flex-shrink: 0;
-                border-radius: 664px;
-                background: url(/Eiris_d/images/effect9-after.png), lightgray 0px -61.307px / 100% 189.718% no-repeat;
+                background: url(images/effect9-after.png), lightgray 0px -61.307px / 100% 189.718% no-repeat;
             }
 
 
@@ -668,6 +667,7 @@ height: 491.724px;
             background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
 
         }
+
         .line::after {
             content: "";
             position: absolute;
@@ -738,12 +738,12 @@ height: 491.724px;
     max-width: 100%;
     margin: 0 auto;
 
-    .img{
+    .img {
         width: 100%;
         position: absolute;
         left: 450px;
         top: -220px;
-        
+
     }
 
     .section-form-container {

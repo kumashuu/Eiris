@@ -298,8 +298,7 @@
   top: -120px;
   width: 622px;
   height: 491.724px;
-  flex-shrink: 0;
-  background: url(/Eiris_d/images/effect6.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
+  background: url(images/effect9-after.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
 }
 #section3 .section3-container .effect6::after {
   content: "";
@@ -451,13 +450,12 @@
 #section3 .section3-container .main03 .effect9::after {
   content: "";
   position: absolute;
-  left: 800px;
+  left: 750px;
   top: -300px;
   width: 622px;
   height: 491.724px;
   flex-shrink: 0;
-  border-radius: 664px;
-  background: url(/Eiris_d/images/effect9-after.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
+  background: url(images/effect9-after.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
 }
 #section3 .section3-container .sub01 {
   margin-top: 72px;
