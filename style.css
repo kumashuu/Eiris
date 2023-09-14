@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html,
+body {
+  overflow-x: hidden;
+}
+
 #header {
   width: 1512px;
   max-width: 1512px;
@@ -113,18 +118,18 @@
   width: 1512px;
   max-width: 100%;
   margin: 0 auto;
-  height: 822px;
+  height: 100dvh;
   overflow: visible;
 }
 #section1 .section1-container {
   width: 100%;
   max-width: 100%;
-  height: 100%;
+  height: 100dvh;
 }
 #section1 .section1-container .main-text {
   position: absolute;
-  top: 254px;
-  left: 200px;
+  top: 400px;
+  left: 280px;
   white-space: nowrap;
   z-index: 20;
   font-family: League Spartan;
@@ -137,25 +142,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-#section1 .section1-container .main-text span {
-  background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: League Spartan;
-  font-size: 126px;
-  font-style: normal;
-  font-weight: 200;
-  line-height: normal;
-}
 #section1 .section1-container .line1 {
   width: 230px;
   height: 1px;
   flex-shrink: 0;
   background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
   position: absolute;
-  top: 400px;
-  right: 1110px;
+  top: 570px;
+  left: 150px;
 }
 #section1 .section1-container .line2 {
   width: 230px;
@@ -168,14 +162,14 @@
 }
 #section1 .section1-container .effect1 {
   position: absolute;
-  width: 100%;
-  right: 250px;
-  bottom: 230px;
+  width: 50%;
+  left: 140px;
+  bottom: 80px;
 }
 #section1 .section1-container .effect2 {
   position: absolute;
-  left: 800px;
-  bottom: 30px;
+  left: 900px;
+  bottom: 80px;
   width: 889px;
   height: 643px;
   border-radius: 889px;
@@ -184,15 +178,26 @@
   z-index: 1;
   flex-shrink: 0;
 }
-#section1 .section1-container .effect3 {
+#section1 .section1-container .mask1 {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: 800px;
+  top: 400px;
+  background-image: url(images/Mask\ group-firsr.png);
+}
+.no-webp #section1 .section1-container .mask1 {
+  background-image: url(mv.jpg);
+}
+#section1 .section1-container .effect3 {
+  position: absolute;
+  left: 850px;
   top: 500px;
   width: 737px;
   height: 643px;
   flex-shrink: 0;
   border-radius: 737px;
-  background: radial-gradient(50% 50% at 50% 50%, #efa81a 0.01%, rgba(253, 253, 253, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #eeb84b 0.01%, rgba(253, 253, 253, 0) 100%);
   mix-blend-mode: lighten;
 }
 #section1 .section1-container .effect4 {
@@ -206,6 +211,17 @@
   background: radial-gradient(50% 50% at 50% 50%, #08a9ee 0%, #1982ac 0.01%, rgba(253, 253, 253, 0) 100%);
   mix-blend-mode: lighten;
 }
+#section1 .section1-container .effect::before {
+  content: "";
+  position: absolute;
+  width: 495px;
+  height: 449px;
+  left: -221px;
+  top: -99px;
+  border-radius: 495px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0) 100%);
+  mix-blend-mode: multiply;
+}
 
 #section2 {
   width: 1040px;
@@ -218,7 +234,7 @@
   margin: 0 32px;
   width: 1040px;
   max-width: 100%;
-  align-items: start;
+  align-items: flex-start;
   gap: 64px;
 }
 #section2 .section2-container .section-text {
@@ -227,6 +243,7 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  margin-left: 16px;
   background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -278,6 +295,29 @@
   width: 1040px;
   max-width: 100%;
 }
+#section3 .section3-container .mask2 {
+  position: absolute;
+  left: -460px;
+  top: 120px;
+  width: 100%;
+  height: 100%;
+}
+#section3 .section3-container .mask3 {
+  position: absolute;
+  left: -280px;
+  top: 1800px;
+  width: 64%;
+  height: 100%;
+  z-index: -1;
+}
+#section3 .section3-container .mask4 {
+  position: absolute;
+  right: -250px;
+  top: 1610px;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+}
 #section3 .section3-container .section-text {
   font-family: League Spartan;
   font-size: 24px;
@@ -299,6 +339,8 @@
   width: 622px;
   height: 491.724px;
   background: url(images/effect9-after.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
+  z-index: 0;
+  opacity: 0.4;
 }
 #section3 .section3-container .effect6::after {
   content: "";
@@ -326,7 +368,12 @@
   justify-content: space-between;
   margin-top: 72px;
 }
-#section3 .section3-container .main img {
+#section3 .section3-container .main picture {
+  width: 40%;
+  z-index: 2;
+}
+#section3 .section3-container .main picture img {
+  width: 100%;
   flex-shrink: 0;
 }
 #section3 .section3-container .main .effect7::before {
@@ -338,25 +385,23 @@
   height: 206.084px;
   flex-shrink: 0;
   border-radius: 447.419px;
-  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #cb1e1e 28.13%, rgba(253, 253, 253, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0) 100%);
   mix-blend-mode: multiply;
 }
 #section3 .section3-container .main .main-right {
   width: 55%;
   gap: 32px;
   flex-direction: row;
-  align-items: start;
 }
 #section3 .section3-container .main .main-right .number {
   color: #101235;
   font-family: League Spartan;
-  font-size: 76px;
+  font-size: 96px;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
   white-space: nowrap;
-  position: relative;
-  bottom: 20px;
+  margin-bottom: 260px;
 }
 #section3 .section3-container .main .main-right .content {
   gap: 32px;
@@ -400,10 +445,9 @@
   height: 1px;
   flex-shrink: 0;
   background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
-  left: 45%;
   position: absolute;
   top: 60px;
-  left: 0;
+  left: -16px;
 }
 #section3 .section3-container .main02 {
   flex-direction: row-reverse;
@@ -413,49 +457,31 @@
   margin-top: 120px;
   padding-bottom: 120px;
 }
+#section3 .section3-container .main03 img {
+  z-index: 2;
+}
 #section3 .section3-container .main03 .effect8::before {
   content: "";
-  position: absolute;
-  left: -221px;
-  top: -239px;
   width: 495px;
   height: 449px;
+  position: absolute;
+  left: -221px;
+  top: -199px;
   border-radius: 495px;
-  background: radial-gradient(50% 50% at 50% 50%, #fe9d27 0%, #FFF6FD 0.01%, #cf1f1f 28.13%, rgba(253, 253, 253, 0) 100%);
+  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0) 100%);
   mix-blend-mode: multiply;
 }
 #section3 .section3-container .main03 .effect8::after {
   content: "";
   position: absolute;
   top: 30px;
-  left: -200px;
+  left: -250px;
   width: 230px;
   height: 1px;
   flex-shrink: 0;
   background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
   bottom: 300px;
-}
-#section3 .section3-container .main03 .effect9::before {
-  content: "";
-  position: absolute;
-  left: 800px;
-  top: -200px;
-  width: 664px;
-  height: 380px;
-  flex-shrink: 0;
-  border-radius: 664px;
-  background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #e26b6b 28.13%, rgba(253, 253, 253, 0) 100%);
-  z-index: 1;
-}
-#section3 .section3-container .main03 .effect9::after {
-  content: "";
-  position: absolute;
-  left: 750px;
-  top: -300px;
-  width: 622px;
-  height: 491.724px;
-  flex-shrink: 0;
-  background: url(images/effect9-after.png), lightgray 0px -61.307px/100% 189.718% no-repeat;
+  z-index: 2;
 }
 #section3 .section3-container .sub01 {
   margin-top: 72px;
@@ -483,6 +509,9 @@
   width: 300px;
   gap: 16px;
   text-align: center;
+}
+#section3 .section3-container .sub01 .sub-container .sub-content picture {
+  width: 100%;
 }
 #section3 .section3-container .sub01 .sub-container .sub-content p {
   color: #0F1134;
@@ -586,9 +615,10 @@
   margin: 0 auto;
 }
 #section-form .img {
-  width: 100%;
+  width: 491px;
+  height: 491px;
   position: absolute;
-  left: 450px;
+  right: 0;
   top: -220px;
 }
 #section-form .section-form-container {
@@ -671,20 +701,15 @@
   color: #ffffff;
 }
 
-select#classification option.default {
-  color: #888;
-  /* グレー色に設定 */
-}
-
 #footer {
   height: 190px;
-  width: 1512px;
+  width: 100%;
   max-width: 100%;
   margin: 0 auto;
 }
 #footer .footer-container {
   height: 190px;
-  width: 1512px;
+  width: 100%;
   max-width: 100%;
   background-color: #000;
   gap: 16px;
@@ -703,4 +728,10 @@ select#classification option.default {
   line-height: 200%;
   /* 24px */
   letter-spacing: 0.6px;
+}
+
+select#classification option.default {
+  color: #888;
+  /* グレー色に設定 */
+  opacity: 0.4;
 }/*# sourceMappingURL=style.css.map */

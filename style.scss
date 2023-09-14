@@ -1,10 +1,13 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
 #header {
     width: 1512px;
     max-width: 1512px;
     justify-content: center;
     margin: 0 auto;
-
-
 
     .head {
         width: 1512px;
@@ -152,30 +155,24 @@
     }
 }
 
-
-
 #section1 {
     width: 1512px;
     max-width: 100%;
     margin: 0 auto;
-    height: 822px;
+    height: 100dvh;
     overflow: visible;
 
     .section1-container {
         width: 100%;
         max-width: 100%;
-        height: 100%;
-
-
-
+        height: 100dvh;
 
         .main-text {
             position: absolute;
-            top: 254px;
-            left: 200px;
+            top: 400px;
+            left: 280px;
             white-space: nowrap;
             z-index: 20;
-
             font-family: League Spartan;
             font-size: 156px;
             font-style: normal;
@@ -185,18 +182,6 @@
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-
-            span {
-                background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                font-family: League Spartan;
-                font-size: 126px;
-                font-style: normal;
-                font-weight: 200;
-                line-height: normal;
-            }
         }
 
         .line1 {
@@ -205,13 +190,11 @@
             flex-shrink: 0;
             background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
             position: absolute;
-            top: 400px;
-            right: 1110px;
-
+            top: 570px;
+            left: 150px;
         }
 
         .line2 {
-
             width: 230px;
             height: 1px;
             flex-shrink: 0;
@@ -219,20 +202,20 @@
             position: absolute;
             top: 800px;
             right: 100px;
-
         }
 
         .effect1 {
             position: absolute;
-            width: 100%;
-            right: 250px;
-            bottom: 230px;
+            width: 50%;
+            left: 140px;
+            bottom: 80px;
+
         }
 
         .effect2 {
             position: absolute;
-            left: 800px;
-            bottom: 30px;
+            left: 900px;
+            bottom: 80px;
             width: 889px;
             height: 643px;
             border-radius: 889px;
@@ -241,19 +224,31 @@
             mix-blend-mode: multiply;
             z-index: 1;
             flex-shrink: 0;
+
+        }
+
+        .mask1 {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 800px;
+            top: 400px;
+            background-image: url(images/Mask\ group-firsr.png);
+
+            .no-webp & {
+                background-image: url(mv.jpg);
+            }
         }
 
         .effect3 {
             position: absolute;
-            left: 800px;
+            left: 850px;
             top: 500px;
             width: 737px;
             height: 643px;
             flex-shrink: 0;
             border-radius: 737px;
-            // background: radial-gradient(50% 50% at 50% 50%, #FFFCF6 0.01%, rgba(253, 253, 253, 0.00) 100%);
-
-            background: radial-gradient(50% 50% at 50% 50%, #efa81a 0.01%, rgba(253, 253, 253, 0.00) 100%);
+            background: radial-gradient(50% 50% at 50% 50%, #eeb84b 0.01%, rgba(253, 253, 253, 0.00) 100%);
             mix-blend-mode: lighten;
         }
 
@@ -266,19 +261,22 @@
             flex-shrink: 0;
             border-radius: 737px;
             //background: radial-gradient(50% 50% at 50% 50%, #EBF9FF 0%, #F1FBFF 0.01%, rgba(253, 253, 253, 0.00) 100%);
-
             background: radial-gradient(50% 50% at 50% 50%, #08a9ee 0%, #1982ac 0.01%, rgba(253, 253, 253, 0.00) 100%);
             mix-blend-mode: lighten;
         }
 
+        .effect::before {
+            content: "";
+            position: absolute;
+            width: 495px;
+            height: 449px;
+            left: -221px;
+            top: -99px;
+            border-radius: 495px;
+            background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0.00) 100%);
+            mix-blend-mode: multiply;
 
-
-
-
-
-
-
-
+        }
     }
 
 }
@@ -294,7 +292,7 @@
         margin: 0 32px;
         width: 1040px;
         max-width: 100%;
-        align-items: start;
+        align-items: flex-start;
         gap: 64px;
 
         .section-text {
@@ -304,7 +302,7 @@
             font-style: normal;
             font-weight: 300;
             line-height: normal;
-
+            margin-left: 16px;
             background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
             background-clip: text;
             -webkit-background-clip: text;
@@ -367,6 +365,38 @@
         width: 1040px;
         max-width: 100%;
 
+        .mask2 {
+            position: absolute;
+            left: -460px;
+            top: 120px;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .mask3 {
+            position: absolute;
+            left: -280px;
+            top: 1800px;
+            width: 64%;
+            height: 100%;
+            z-index: -1;
+
+        }
+
+        .mask4 {
+            position: absolute;
+            right: -250px;
+            top: 1610px;
+            width: 50%;
+            height: 100%;
+            z-index: -1;
+
+        }
+
+
+
+
         .section-text {
 
             font-family: League Spartan;
@@ -392,6 +422,8 @@
             width: 622px;
             height: 491.724px;
             background: url(images/effect9-after.png), lightgray 0px -61.307px / 100% 189.718% no-repeat;
+            z-index: 0;
+            opacity: 0.4;
         }
 
         .effect6::after {
@@ -422,8 +454,15 @@
             justify-content: space-between;
             margin-top: 72px;
 
-            img {
-                flex-shrink: 0;
+            picture {
+                width: 40%;
+                z-index: 2;
+
+                img {
+                    width: 100%;
+                    flex-shrink: 0;
+
+                }
             }
 
             .effect7::before {
@@ -435,8 +474,7 @@
                 height: 206.084px;
                 flex-shrink: 0;
                 border-radius: 447.419px;
-                // background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0.00) 100%);
-                background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #cb1e1e 28.13%, rgba(253, 253, 253, 0.00) 100%);
+                background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0.00) 100%);
                 mix-blend-mode: multiply;
             }
 
@@ -444,19 +482,16 @@
                 width: 55%;
                 gap: 32px;
                 flex-direction: row;
-                align-items: start;
 
                 .number {
                     color: #101235;
                     font-family: League Spartan;
-                    font-size: 76px;
+                    font-size: 96px;
                     font-style: normal;
                     font-weight: 100;
                     line-height: normal;
                     white-space: nowrap;
-                    position: relative;
-                    bottom: 20px;
-
+                    margin-bottom: 260px;
                 }
 
                 .content {
@@ -502,15 +537,13 @@
                     }
 
                     .line {
-
                         width: 250px;
                         height: 1px;
                         flex-shrink: 0;
                         background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
-                        left: 45%;
                         position: absolute;
                         top: 60px;
-                        left: 0;
+                        left: -16px;
 
                     }
                 }
@@ -528,60 +561,35 @@
             margin-top: 120px;
             padding-bottom: 120px;
 
+            img {
+                z-index: 2;
+
+            }
+
             .effect8::before {
                 content: "";
-                position: absolute;
-                left: -221px;
-                top: -239px;
                 width: 495px;
                 height: 449px;
+                position: absolute;
+                left: -221px;
+                top: -199px;
                 border-radius: 495px;
-                // background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0.00) 100%);
-                background: radial-gradient(50% 50% at 50% 50%, #fe9d27 0%, #FFF6FD 0.01%, #cf1f1f 28.13%, rgba(253, 253, 253, 0.00) 100%);
+                background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0.00) 100%);
                 mix-blend-mode: multiply;
-
             }
 
             .effect8::after {
                 content: "";
                 position: absolute;
                 top: 30px;
-                left: -200px;
+                left: -250px;
                 width: 230px;
                 height: 1px;
                 flex-shrink: 0;
                 background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
                 bottom: 300px;
+                z-index: 2;
             }
-
-            .effect9::before {
-                content: "";
-                position: absolute;
-                left: 800px;
-                top: -200px;
-                width: 664px;
-                height: 380px;
-                flex-shrink: 0;
-                border-radius: 664px;
-                // background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #FFF3F3 28.13%, rgba(253, 253, 253, 0.00) 100%);
-                background: radial-gradient(50% 50% at 50% 50%, #FFFBF6 0%, #FFF6FD 0.01%, #e26b6b 28.13%, rgba(253, 253, 253, 0.00) 100%);
-                z-index: 1;
-            }
-
-            .effect9::after {
-                content: "";
-                position: absolute;
-                left: 750px;
-                top: -300px;
-                width: 622px;
-                height: 491.724px;
-                flex-shrink: 0;
-                background: url(images/effect9-after.png), lightgray 0px -61.307px / 100% 189.718% no-repeat;
-            }
-
-
-
-
         }
 
         .sub01 {
@@ -611,6 +619,10 @@
                     width: 300px;
                     gap: 16px;
                     text-align: center;
+
+                    picture {
+                        width: 100%;
+                    }
 
                     p {
                         color: #0F1134;
@@ -739,9 +751,10 @@
     margin: 0 auto;
 
     .img {
-        width: 100%;
+        width: 491px;
+        height: 491px;
         position: absolute;
-        left: 450px;
+        right: 0;
         top: -220px;
 
     }
@@ -757,21 +770,16 @@
             margin-left: 104px;
             position: relative;
             right: 45%;
-
             font-family: League Spartan;
             font-size: 96px;
             font-style: normal;
             font-weight: 200;
             line-height: normal;
-
             background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 16px;
-
-
-
         }
 
         .line {
@@ -786,6 +794,8 @@
         .form {
             width: 500px;
             margin-top: 104px;
+
+
 
             &-row {
                 align-items: flex-start;
@@ -851,20 +861,17 @@
     }
 }
 
-select#classification option.default {
-    color: #888;
-    /* グレー色に設定 */
-}
+
 
 #footer {
     height: 190px;
-    width: 1512px;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
 
     .footer-container {
         height: 190px;
-        width: 1512px;
+        width: 100%;
         max-width: 100%;
         background-color: #000;
         gap: 16px;
@@ -888,4 +895,11 @@ select#classification option.default {
 
 
     }
+}
+
+//選択肢の色変更
+select#classification option.default {
+    color: #888;
+    /* グレー色に設定 */
+    opacity: 0.4;
 }
