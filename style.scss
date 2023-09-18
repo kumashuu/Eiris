@@ -1428,11 +1428,12 @@ select#classification option.default {
             }
 
             .table-row {
-                width: 670px;
-                max-width: 90%;
+                width: 400px;
+                max-width: 100%;
+                flex-direction: column;
                 .row-left {
                     width: 140px;
-                    padding: 16px 24px 16px 20px;
+                    padding: 8px 24px 8px 20px;
                     align-items: flex-start;
                     gap: 10px;
 
@@ -1449,8 +1450,9 @@ select#classification option.default {
                 }
 
                 .row-right {
-                    width: 500px;
-                    padding: 16px 24px 16px 20px;
+                    width: 340px;
+                    max-width: 100%;
+                    padding: 8px 24px 8px 20px;
                     align-items: flex-start;
                     gap: 10px;
                     white-space: wrap;

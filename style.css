@@ -1159,12 +1159,13 @@ select#classification option.default {
     margin-top: 20px;
   }
   #section-table .section-table-container .table-row {
-    width: 670px;
-    max-width: 90%;
+    width: 400px;
+    max-width: 100%;
+    flex-direction: column;
   }
   #section-table .section-table-container .table-row .row-left {
     width: 140px;
-    padding: 16px 24px 16px 20px;
+    padding: 8px 24px 8px 20px;
     align-items: flex-start;
     gap: 10px;
   }
@@ -1179,8 +1180,9 @@ select#classification option.default {
     letter-spacing: 0.7px;
   }
   #section-table .section-table-container .table-row .row-right {
-    width: 500px;
-    padding: 16px 24px 16px 20px;
+    width: 340px;
+    max-width: 100%;
+    padding: 8px 24px 8px 20px;
     align-items: flex-start;
     gap: 10px;
     white-space: wrap;
