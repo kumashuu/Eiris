@@ -1160,6 +1160,7 @@ select#classification option.default {
   }
   #section-table .section-table-container .table-row {
     width: 670px;
+    max-width: 90%;
   }
   #section-table .section-table-container .table-row .row-left {
     width: 140px;
