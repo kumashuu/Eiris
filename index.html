@@ -29,39 +29,44 @@
                 </h1>
             </div>
             <div class="head-right">
-                <a href="#">
+                <a href="#section2">
                     <p>concept</p>
                 </a>
-                <a href="#">
+                <a href="#section3">
                     <p>service</p>
                 </a>
-                <a href="#">
+                <a href="#achievment">
                     <p>achievment</p>
                 </a>
-                <a href="#">
+                <a href="#section-table">
                     <p>overview</p>
                 </a>
             </div>
             <div class="head-btn">
 
-                <button type="button" id="menu-button" data-s-192f348e-7a4f-4527-a80d-bab662abc9a5=""
-                    class="icon material-icons ">menu</button>
+                <button type="button" id="menu-button" class="icon ">
+                  <picture>
+                    <source src="images/squoosh/btn.webp" type="image/webp">
+                      <img src="images/ original-img/btn.png" alt="">
+                    </picture>
+                </button>
 
             </div>
 
             <div class="head-mobile" id="mobile-header-info">
 
 
-                <a href="#">
+                <a href="#section2">
                     <p>concept</p>
                 </a>
-                <a href="#">
+                <a href="#section3">
                     <p>service</p>
                 </a>
-                <a href="#">
+                <a href="#achievment">
                     <p>achievment</p>
                 </a>
-                <a href="#">
+                <a href="#section-table">
+
                     <p>overview</p>
                 </a>
 
@@ -75,10 +80,10 @@
             <h1 class="main-text">What is true health&thinsp;?</h1>
 
             <div class="effect1 wakka">
-                <picture>
-
-                    <img src="images/ original-img/wacca1.png" alt="">
-                </picture>
+                
+                
+                    <img src="images/ original-img/eiris_top-min.gif" alt="GIF">
+              
             </div>
             <div class="effect2">
             </div>
@@ -119,7 +124,7 @@
                     <img src="images/ original-img/Mask group-sec3-01left.png" alt="">
                 </picture>
             </div>
-            <div class="line"></div>
+            <div class="line-s"></div>
 
 
             <div class="main">
@@ -185,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main main02">
+            <div class="main main02 " id="achievment">
                 <picture>
                     <source srcset="images/squoosh/sec3-02.webp" type="image/webp">
                     <img src="images/ original-img/sec3-02.png" alt="">
@@ -240,7 +245,7 @@
                             やOA機器の選定・手配、人材採用、開局後のPR・広告施策などトータルで支援いたします。<br>&thinsp;
                         </p>
                         <div class="btn" onclick="redirectToLink()">
-                            <a href="">CONTACT
+                            <a href="#section-form">CONTACT
                             </a>
                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"
                                 fill="none">
@@ -314,7 +319,7 @@
                     <div class="row-right">「Eiris」の企画・販売<br>
                         医療機関に対する各種コンサルティング ウェルネスブランド</div>
                 </div>
-                <div class="table-row">
+                <div class="table-row last-row">
                     <div class="row-left">資格</div>
                     <div class="row-right">有料職業紹介事業許可番号: 13-ユ-313635</div>
                 </div>
@@ -400,6 +405,16 @@
         // リンク先に遷移
         window.location.href = linkUrl;
     }
+        // ボタンをクリックした際の処理を定義
+        document.getElementById("menu-button").addEventListener("click", function() {
+            var mobileHeader = document.getElementById("mobile-header-info");
+    
+            if (mobileHeader.style.display === "flex") {
+                mobileHeader.style.display = "none";
+            } else {
+                mobileHeader.style.display = "flex";
+            }
+        });
 </script>
 
 </html>
