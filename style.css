@@ -1316,7 +1316,6 @@ select#classification option.default {
   }
   #section-form .section-form-container .form-row input,
   #section-form .section-form-container .form-row select {
-    color: gray;
     width: 500px;
     max-width: 100%;
     height: 48px;
@@ -1324,6 +1323,10 @@ select#classification option.default {
     border: 1px solid #415C84;
     flex-shrink: 0;
     padding-left: 16px;
+  }
+  #section-form .section-form-container .form-row select {
+    color: gray;
+    background-color: white;
   }
   #section-form .section-form-container .form-row textarea {
     width: 500px;
