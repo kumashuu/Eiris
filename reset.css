@@ -34,6 +34,7 @@ a{
   text-decoration-skip-ink: auto;
   text-decoration: none;
   -webkit-appearance: none;
+  appearance: none;
 
 }
 img,

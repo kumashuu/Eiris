@@ -1316,6 +1316,7 @@ select#classification option.default {
   }
   #section-form .section-form-container .form-row input,
   #section-form .section-form-container .form-row select {
+    color: gray;
     width: 500px;
     max-width: 100%;
     height: 48px;
