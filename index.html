@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <script src="modernizr-custom.js"></script>
 
-    <title>Eiris</title>
+    <title>EIRIS</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
                     <a href="#">
                         <picture>
                             <source srcset="images/squoosh/logo.webp" type="image/webp">
-                            <img src="images/ original-img/logo.png" alt="Eiris">
+                            <img src="images/ original-img/logo.png" alt="EIRIS">
                         </picture>
                     </a>
                 </h1>
@@ -77,7 +77,7 @@
 
     <section id="section1">
         <div class="section1-container">
-            <h1 class="main-text">What is true health&thinsp;?</h1>
+            <h1 class="main-text">Essential Elements For Life</h1>
 
             <div class="effect1 wakka">
                 
@@ -138,9 +138,9 @@
 
                     <p class="number">01</p>
                     <div class="content">
-                        <h2 class="content-title">ウェルネスブランド「Eiris / エイリス」の企画・製造・販売</h2>
+                        <h2 class="content-title">ウェルネスブランド「EIRIS / エイリス」の企画・製造・販売</h2>
                         <p class="content-text">日本は未病・予防よりも「病気になってから治す」という傾向が強く、本来であれば健康な状態を維持すること
-                            そのものが素晴らしいことであるはずなのに、マイナスな状態ばかりに目が向きがちです。 健康になりたい、または誰かの健康を応援したいという気持ちをEirisはサポートします。</p>
+                            そのものが素晴らしいことであるはずなのに、マイナスな状態ばかりに目が向きがちです。 健康になりたい、または誰かの健康を応援したいという気持ちをEIRISはサポートします。</p>
                         <div class="btn" onclick="redirectToLink()">
                             <a href="">EC shop
                             </a>
@@ -162,7 +162,7 @@
                 </div>
             </div>
             <div class="sub01">
-                <h3>Eirisのこだわり</h3>
+                <h3>EIRISのこだわり</h3>
                 <div class="sub-container">
                     <div class="sub-content">
                         <picture>
@@ -316,7 +316,7 @@
                 </div>
                 <div class="table-row">
                     <div class="row-left">事業内容</div>
-                    <div class="row-right">「Eiris」の企画・販売<br>
+                    <div class="row-right">「EIRIS」の企画・販売<br>
                         医療機関に対する各種コンサルティング ウェルネスブランド</div>
                 </div>
                 <div class="table-row last-row">
@@ -366,8 +366,8 @@
                 </div>
                 <div class="form-row">
                     <label for="classification">分類</label>
-                    <select type="classification" id="classification" name="classification" required>
-                        <option value="" disabled selected class="default">選択してください</option>
+                    <select type="classification" id="classification" name="classification" required onchange="changeColor(this)">
+                        <option value="disabled selected ">選択してください</option>
                         <option value="サンプル1">選択肢のサンプル1</option>
                         <option value="サンプル2">選択肢のサンプル2</option>
                         <option value="サンプル3">選択肢のサンプル3</option>
@@ -415,6 +415,15 @@
                 mobileHeader.style.display = "flex";
             }
         });
+        //selectboxの色
+        function changeColor(hoge){
+            if( hoge.value == 0 ){
+                hoge.style.color = '';
+            }else{
+                hoge.style.color = 'black';
+            }
+        }
+    
 </script>
 
 </html>

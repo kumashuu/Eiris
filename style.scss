@@ -451,6 +451,19 @@ body {
                         left: 45%;
                         cursor: pointer;
 
+                        a {
+                            font-family: League Spartan;
+                            font-size: 24px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: normal;
+                            letter-spacing: 1.2px;
+                            background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
+                            background-clip: text;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent
+                        }
+
 
                     }
 
@@ -676,7 +689,7 @@ body {
     max-width: 100%;
     margin: 0 auto;
     max-width: 100%;
-    padding-top:80px ;
+    padding-top: 80px;
 
 
     .mask5 {
@@ -798,6 +811,10 @@ body {
 
                 }
 
+                select{
+                    color: #626262;
+                }
+
                 textarea {
 
                     width: 500px;
@@ -809,6 +826,12 @@ body {
                     border: 1px solid #415C84;
                     height: 225px;
                     flex-shrink: 0;
+                }
+                #classification{
+
+                    .default{
+                        color: #e90000;
+                    }
                 }
 
 
@@ -1318,7 +1341,7 @@ select#classification option.default {
             .sub01 {
                 margin-top: 72px;
                 gap: 32px;
-
+                justify-content: center;
 
                 h3 {
                     background: linear-gradient(90deg, #0F1134 32.39%, #535353 54.69%, #0F1134 73.81%);
@@ -1337,17 +1360,17 @@ select#classification option.default {
                 .sub-container {
                     flex-direction: column;
                     gap: 32px;
-                    justify-content: space-between;
+                    justify-content: center;
 
                     .sub-content {
-                        width: 300px;
+                        width: 100%;
                         gap: 16px;
                         text-align: center;
                         margin: 0 auto;
                         justify-content: center;
 
                         img {
-                            width: 70%;
+                            width: 65%;
                             margin: 0 auto;
                         }
 
@@ -1378,27 +1401,16 @@ select#classification option.default {
         max-width: 100%;
         margin: 0 auto;
         padding: 0 32px;
+
         .section-table-container {
             padding-top: 0px;
             padding-bottom: 40px;
-            margin: 0 32px;
             width: 1040px;
             max-width: 100%;
 
             .section-text {
 
-                font-family: League Spartan;
                 font-size: 24px;
-                font-style: normal;
-                font-weight: 300;
-                line-height: normal;
-
-                background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                margin-bottom: 16px;
-
 
             }
 
@@ -1431,6 +1443,8 @@ select#classification option.default {
                 width: 400px;
                 max-width: 100%;
                 flex-direction: column;
+                padding-left: 12px;
+
                 .row-left {
                     width: 140px;
                     padding: 8px 24px 8px 20px;
@@ -1452,7 +1466,7 @@ select#classification option.default {
                 .row-right {
                     width: 340px;
                     max-width: 100%;
-                    padding: 8px 24px 8px 20px;
+                    padding: 4px 24px 8px 20px;
                     align-items: flex-start;
                     gap: 10px;
                     white-space: wrap;
@@ -1561,10 +1575,11 @@ select#classification option.default {
                 flex-shrink: 0;
                 background: linear-gradient(to right, #3E0070 0%, #96D3FF 65%, #101920 100%);
             }
+
             .line::after {
                 content: "";
                 position: absolute;
-                left: -100px;
+                left: -50px;
                 top: 950px;
                 width: 120px;
                 height: 1px;
@@ -1642,7 +1657,7 @@ select#classification option.default {
                     cursor: pointer;
 
                 }
-               
+
 
 
             }

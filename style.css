@@ -373,6 +373,18 @@ body {
   left: 45%;
   cursor: pointer;
 }
+#section3 .section3-container .main .main-right .content .btn a {
+  font-family: League Spartan;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 #section3 .section3-container .main .main-right .content .line {
   width: 250px;
   height: 1px;
@@ -655,6 +667,9 @@ body {
   flex-shrink: 0;
   padding-left: 16px;
 }
+#section-form .section-form-container .form-row select {
+  color: #626262;
+}
 #section-form .section-form-container .form-row textarea {
   width: 500px;
   max-width: 100%;
@@ -664,6 +679,9 @@ body {
   border: 1px solid #415C84;
   height: 225px;
   flex-shrink: 0;
+}
+#section-form .section-form-container .form-row #classification .default {
+  color: #e90000;
 }
 #section-form .section-form-container .form .submit {
   margin-top: 24px;
@@ -1072,6 +1090,7 @@ select#classification option.default {
   #section3 .section3-container .sub01 {
     margin-top: 72px;
     gap: 32px;
+    justify-content: center;
   }
   #section3 .section3-container .sub01 h3 {
     background: linear-gradient(90deg, #0F1134 32.39%, #535353 54.69%, #0F1134 73.81%);
@@ -1089,17 +1108,17 @@ select#classification option.default {
   #section3 .section3-container .sub01 .sub-container {
     flex-direction: column;
     gap: 32px;
-    justify-content: space-between;
+    justify-content: center;
   }
   #section3 .section3-container .sub01 .sub-container .sub-content {
-    width: 300px;
+    width: 100%;
     gap: 16px;
     text-align: center;
     margin: 0 auto;
     justify-content: center;
   }
   #section3 .section3-container .sub01 .sub-container .sub-content img {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
   }
   #section3 .section3-container .sub01 .sub-container .sub-content p {
@@ -1122,21 +1141,11 @@ select#classification option.default {
   #section-table .section-table-container {
     padding-top: 0px;
     padding-bottom: 40px;
-    margin: 0 32px;
     width: 1040px;
     max-width: 100%;
   }
   #section-table .section-table-container .section-text {
-    font-family: League Spartan;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    background: linear-gradient(86deg, #000 -1.4%, #837AA9 46.29%, #473398 91.08%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 16px;
   }
   #section-table .section-table-container .line::before {
     content: "";
@@ -1162,6 +1171,7 @@ select#classification option.default {
     width: 400px;
     max-width: 100%;
     flex-direction: column;
+    padding-left: 12px;
   }
   #section-table .section-table-container .table-row .row-left {
     width: 140px;
@@ -1182,7 +1192,7 @@ select#classification option.default {
   #section-table .section-table-container .table-row .row-right {
     width: 340px;
     max-width: 100%;
-    padding: 8px 24px 8px 20px;
+    padding: 4px 24px 8px 20px;
     align-items: flex-start;
     gap: 10px;
     white-space: wrap;
@@ -1276,7 +1286,7 @@ select#classification option.default {
   #section-form .section-form-container .line::after {
     content: "";
     position: absolute;
-    left: -100px;
+    left: -50px;
     top: 950px;
     width: 120px;
     height: 1px;
