@@ -42,36 +42,19 @@
                     <p>overview</p>
                 </a>
             </div>
-            <div class="head-btn">
 
-                <button type="button" id="menu-button" class="icon ">
-                  <picture>
-                    <source src="images/squoosh/btn.webp" type="image/webp">
-                      <img src="images/ original-img/btn.png" alt="">
-                    </picture>
-                </button>
-
+            <input type="checkbox" id="drawer-checkbox" class="menu-checkbox">
+            <label for="drawer-checkbox" class="drawer-icon"><span></span></label>
+            <div class="drawer-menu">
+                <ul class="drawer-menu-list">
+                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#section2">concept</a></li>
+                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#section3">service</a></li>
+                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#achievment">achievment</a></li>
+                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#section-table">overview</a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="head-mobile" id="mobile-header-info">
-
-
-                <a href="#section2">
-                    <p>concept</p>
-                </a>
-                <a href="#section3">
-                    <p>service</p>
-                </a>
-                <a href="#achievment">
-                    <p>achievment</p>
-                </a>
-                <a href="#section-table">
-
-                    <p>overview</p>
-                </a>
-
-                <div class="smoke"></div>
-            </div>
+            <label for="drawer-checkbox" class="menu-background"></label>
 
     </header>
 
@@ -80,10 +63,10 @@
             <h1 class="main-text">Essential Elements For Life</h1>
 
             <div class="effect1 wakka">
-                
-                
-                    <img src="images/ original-img/eiris_top-min.gif" alt="GIF">
-              
+
+
+                <img src="images/ original-img/eiris_top-min.gif" alt="GIF">
+
             </div>
             <div class="effect2">
             </div>
@@ -366,7 +349,8 @@
                 </div>
                 <div class="form-row">
                     <label for="classification">分類</label>
-                    <select type="classification" id="classification" name="classification" required onchange="changeColor(this)">
+                    <select type="classification" id="classification" name="classification" required
+                        onchange="changeColor(this)">
                         <option value="disabled selected ">選択してください</option>
                         <option value="サンプル1">選択肢のサンプル1</option>
                         <option value="サンプル2">選択肢のサンプル2</option>
@@ -399,31 +383,15 @@
 </body>
 
 <script>
-    function redirectToLink() {
-        // リンク先のURLを指定
-        var linkUrl = "#"; // リンクしたいURLに置き換えてください
-        // リンク先に遷移
-        window.location.href = linkUrl;
-    }
-        // ボタンをクリックした際の処理を定義
-        document.getElementById("menu-button").addEventListener("click", function() {
-            var mobileHeader = document.getElementById("mobile-header-info");
-    
-            if (mobileHeader.style.display === "flex") {
-                mobileHeader.style.display = "none";
-            } else {
-                mobileHeader.style.display = "flex";
-            }
-        });
-        //selectboxの色
-        function changeColor(hoge){
-            if( hoge.value == 0 ){
-                hoge.style.color = '';
-            }else{
-                hoge.style.color = 'black';
-            }
+
+    //selectboxの色
+    function changeColor(hoge) {
+        if (hoge.value == 0) {
+            hoge.style.color = '';
+        } else {
+            hoge.style.color = 'black';
         }
-    
+    }
 </script>
 
 </html>
