@@ -1,397 +1,503 @@
 <!DOCTYPE html>
 <html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex" />
-    <link rel="stylesheet" href="reset.css" media="screen">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" media="screen">
+    <link rel="stylesheet" href="destyle.min.css" media="screen" />
+    <link rel="stylesheet" href="reset.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200&Inter:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" media="screen" />
     <script src="modernizr-custom.js"></script>
 
     <title>EIRIS</title>
-</head>
+  </head>
 
-<body>
-    <header id="header">
-        <div class="head">
-            <div class="head-left">
-                <h1>
-                    <a href="#">
-                        <picture>
-                            <source srcset="images/squoosh/logo.webp" type="image/webp">
-                            <img src="images/ original-img/logo.png" alt="EIRIS">
-                        </picture>
-                    </a>
-                </h1>
-            </div>
-            <div class="head-right">
-                <a href="#section2">
-                    <p>concept</p>
-                </a>
-                <a href="#section3">
-                    <p>service</p>
-                </a>
-                <a href="#achievment">
-                    <p>achievment</p>
-                </a>
-                <a href="#section-table">
-                    <p>overview</p>
-                </a>
-            </div>
-
-            <input type="checkbox" id="drawer-checkbox" class="menu-checkbox">
-            <label for="drawer-checkbox" class="drawer-icon"><span></span></label>
-            <div class="drawer-menu">
-                <ul class="drawer-menu-list">
-                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#section2">concept</a></li>
-                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#section3">service</a></li>
-                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#achievment">achievment</a></li>
-                    <li class="drawer-menu-item"><a class="drawer-menu-item-link" href="#section-table">overview</a>
-                    </li>
-                </ul>
-            </div>
-            <label for="drawer-checkbox" class="menu-background"></label>
-
-    </header>
-
-    <section id="section1">
-        <div class="section1-container">
-            <h1 class="main-text">Essential Elements For Life</h1>
-
-            <div class="effect1 wakka">
-
-
-                <img src="images/ original-img/eiris_top-min.gif" alt="GIF">
-
-            </div>
-            <div class="effect2">
-            </div>
-            <div class="mask1 ">
-                <picture>
-                    <source srcset="images/squoosh/Mask group-firsr.webp" type="image/webp">
-                    <img src="images/ original-img/Mask group-firsr.png" alt="">
-                </picture>
-            </div>
-            <div class="effect3">
-            </div>
-            <div class="effect4">
-            </div>
-            <div class="line1"></div>
-            <div class="line2"></div>
-        </div>
-    </section>
-    <section id="section2">
-        <div class="section2-container">
-            <h2 class="section-text">concept</h2>
-            <p class="text">私たちは健康の本質を深く理解し、<br>
-                あなたの人生に彩りを添える最高の瞬間をサポートしたいと思っています。<br>
-                私たちの製品を通じて、もっと多くの方が<br>健康に対する真の価値を感じ取っていただければ嬉しいです。<br>
-                それがEIRISの信条です。</p>
-            <div class="effect5">
-            </div>
-            <div class="line"></div>
-
-        </div>
-    </section>
-    <section id="section3">
-        <div class="section3-container">
-            <h2 class="section-text">service</h2>
-
-            <div class="mask2">
-                <picture>
-                    <source srcset="images/squoosh/Mask group-sec3-01left.webp" type="image/webp">
-                    <img src="images/ original-img/Mask group-sec3-01left.png" alt="">
-                </picture>
-            </div>
-            <div class="line-s"></div>
-
-
-            <div class="main">
-                <picture>
-                    <source srcset="images/squoosh/sec3-01.webp" type="image/webp">
-                    <img src="images/ original-img/sec3-01.png" alt="">
-                </picture>
-                <div class="effect7">
-                </div>
-                <div class="main-right">
-
-                    <p class="number">01</p>
-                    <div class="content">
-                        <h2 class="content-title">ウェルネスブランド「EIRIS / エイリス」の企画・製造・販売</h2>
-                        <p class="content-text">日本は未病・予防よりも「病気になってから治す」という傾向が強く、本来であれば健康な状態を維持すること
-                            そのものが素晴らしいことであるはずなのに、マイナスな状態ばかりに目が向きがちです。 健康になりたい、または誰かの健康を応援したいという気持ちをEIRISはサポートします。</p>
-                        <div class="btn" onclick="redirectToLink()">
-                            <a href="">EC shop
-                            </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"
-                                fill="none">
-                                <path d="M1.34277 12.6569L6.99963 7.00001L1.34277 1.34315"
-                                    stroke="url(#paint0_linear_201_89)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_201_89" x1="2.40435" y1="9.95998" x2="-4.09864"
-                                        y2="3.457" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3E0070" />
-                                        <stop offset="1" stop-color="#96D3FF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <div class="line"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="sub01">
-                <h3>EIRISのこだわり</h3>
-                <div class="sub-container">
-                    <div class="sub-content">
-                        <picture>
-                            <source srcset="images/squoosh/sec3-01-1.webp" type="image/webp">
-                            <img src="images/ original-img/sec3-01-1.png" alt="">
-                        </picture>
-                        <p>医師や管理栄養士監修済み<br>
-                            の成分のみ使用</p>
-                    </div>
-                    <div class="sub-content">
-                        <picture>
-                            <source srcset="images/squoosh/sec3-01-2.webp" type="image/webp">
-                            <img src="images/ original-img/sec3-01-2.png" alt="">
-                        </picture>
-                        <p>60年以上の歴史がある<br>
-                            老舗製薬会社のディレクション</p>
-                    </div>
-                    <div class="sub-content">
-                        <picture>
-                            <source srcset="images/squoosh/sec3-01-3.webp" type="image/webp">
-                            <img src="images/ original-img/sec3-01-3.png" alt="">
-                        </picture>
-                        <p>トップアスリートにも<br>
-                            ご愛用いただいている</p>
-                    </div>
-                </div>
-            </div>
-            <div class="main main02 " id="achievment">
-                <picture>
-                    <source srcset="images/squoosh/sec3-02.webp" type="image/webp">
-                    <img src="images/ original-img/sec3-02.png" alt="">
-                </picture>
-                <div class="main-right">
-
-                    <p class="number">02</p>
-                    <div class="content">
-                        <h2 class="content-title">ハイクラスドクター転職サイト『DOCTEN』の運営</h2>
-                        <p class="content-text">マッチング後の定着率99%の業界最高水準の、医療に特化した転職支援サービスを運営しています。
-                            医療機関での勤務を経験したエージェントが、転職される方の持つ魅力を存分に活かせる最良な勤務先を選定し、ご提案させて頂きます。<br>&thinsp;</p>
-                        <div class="btn" onclick="redirectToLink()">
-                            <a href="">DOCTEN
-                            </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"
-                                fill="none">
-                                <path d="M1.34277 12.6569L6.99963 7.00001L1.34277 1.34315"
-                                    stroke="url(#paint0_linear_201_89)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_201_89" x1="2.40435" y1="9.95998" x2="-4.09864"
-                                        y2="3.457" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3E0070" />
-                                        <stop offset="1" stop-color="#96D3FF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <div class="line"></div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="main main03">
-
-                <div class="effect8">
-                </div>
-
-                <picture>
-                    <source srcset="images/squoosh/sec3-03.webp" type="image/webp">
-                    <img src="images/ original-img/sec3-03.png" alt="">
-                </picture>
-
-                <div class="main-right">
-
-                    <p class="number">03</p>
-                    <div class="content">
-                        <h2 class="content-title">新規開業支援及び、M&A(事業承継)支援<br>&thinsp;</h2>
-                        <p class="content-text">クリニックの新規開業に必要な業務を全面的にサポート。
-                            物件・エリア選定、ブランディング構築(店舗デザイン・設計・施工)、事業計画書の作成、医療機器
-                            やOA機器の選定・手配、人材採用、開局後のPR・広告施策などトータルで支援いたします。<br>&thinsp;
-                        </p>
-                        <div class="btn" onclick="redirectToLink()">
-                            <a href="#section-form">CONTACT
-                            </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14"
-                                fill="none">
-                                <path d="M1.34277 12.6569L6.99963 7.00001L1.34277 1.34315"
-                                    stroke="url(#paint0_linear_201_89)" />
-                                <defs>
-                                    <linearGradient id="paint0_linear_201_89" x1="2.40435" y1="9.95998" x2="-4.09864"
-                                        y2="3.457" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#3E0070" />
-                                        <stop offset="1" stop-color="#96D3FF" />
-                                    </linearGradient>
-                                </defs>
-                            </svg>
-                            <div class="line"></div>
-                        </div>
-
-
-                    </div>
-                </div>
-
-            </div>
-            <div class="mask3">
-                <picture>
-                    <source srcset="images/squoosh/Mask group-sec3-03left.webp" type="image/webp">
-                    <img src="images/ original-img/Mask group-sec3-03left.png" alt="">
-                </picture>
-            </div>
-            <div class="mask4">
-
-                <picture>
-                    <source srcset="images/squoosh/Mask group-sec3-right.webp" type="image/webp">
-                    <img src="images/ original-img/Mask group-sec3-right.png" alt="">
-                </picture>
-            </div>
-
-
-
-        </div>
-    </section>
-    <section id="section-table">
-        <div class="section-table-container">
-            <h2 class="section-text">overview</h2>
-            <div class="line"></div>
-            <div class="line2"></div>
-            <div class="table">
-                <div class="table-row">
-                    <div class="row-left">社名</div>
-                    <div class="row-right">株式会社EIRIS / EIRIS INC.</div>
-                </div>
-
-
-                <div class="table-row">
-                    <div class="row-left">設立</div>
-                    <div class="row-right">2021年4月</div>
-                </div>
-
-                <div class="table-row">
-                    <div class="row-left">役員</div>
-                    <div class="row-right">代表取締役 杉山 陽介<br>
-                        取締役 中村 渉<br>
-                        取締役 伊藤 和也<br>
-                        取締役 井上 和恵(薬剤師)
-                    </div>
-                </div>
-                <div class="table-row">
-                    <div class="row-left">所在地</div>
-                    <div class="row-right">本社:東京都港区南麻布1-17-3</div>
-                </div>
-                <div class="table-row">
-                    <div class="row-left">事業内容</div>
-                    <div class="row-right">「EIRIS」の企画・販売<br>
-                        医療機関に対する各種コンサルティング ウェルネスブランド</div>
-                </div>
-                <div class="table-row last-row">
-                    <div class="row-left">資格</div>
-                    <div class="row-right">有料職業紹介事業許可番号: 13-ユ-313635</div>
-                </div>
-            </div>
-        </div>
-
-        </div>
-        </div>
-        </div>
-    </section>
-    <section id="section-form">
-        <div class="mask5">
-            <picture>
-                <source srcset="images/squoosh/Mask group-form-left.webp" type="image/webp">
-                <img src="images/ original-img/Mask group-form-left.png" alt="">
-            </picture>
-        </div>
-
-        <div class="effect-f"></div>
-        <div class="img">
-            <picture>
-                <source srcset="images/squoosh/wakka2.webp" type="image/webp">
-                <img src="images/ original-img/wakka2.png" alt="art">
-            </picture>
-        </div>
-
-        <div class="section-form-container">
-            <h2 class="section-text">contact</h2>
-            <div class="line"></div>
-            <form action="submit.php" method="POST" class="form">
-                <div class="form-row">
-                    <label for="name">お名前</label>
-                    <input type="text" id="name" name="name" required placeholder="必須">
-                </div>
-
-                <div class="form-row">
-                    <label for="email">メールアドレス</label>
-                    <input type="email" id="email" name="email" required placeholder="必須">
-                </div>
-
-                <div class="form-row">
-                    <label for="email">電話番号</label>
-                    <input type="email" id="email" name="email" required placeholder="必須">
-                </div>
-                <div class="form-row">
-                    <label for="classification">分類</label>
-                    <select type="classification" id="classification" name="classification" required
-                        onchange="changeColor(this)">
-                        <option value="disabled selected ">選択してください</option>
-                        <option value="サンプル1">選択肢のサンプル1</option>
-                        <option value="サンプル2">選択肢のサンプル2</option>
-                        <option value="サンプル3">選択肢のサンプル3</option>
-                        <option value="サンプル4">選択肢のサンプル4</option>
-                        <option value="サンプル5">選択肢のサンプル5</option>
-                    </select>
-                </div>
-                <div class="form-row">
-                    <label for="message">お問い合わせ内容</label>
-                    <textarea id="message" name="message" rows="7" required placeholder="必須"></textarea>
-                </div>
-                <input type="submit" value="送信する" class="submit">
-            </form>
-        </div>
-    </section>
-    <footer id="footer">
-        <div class="footer-container">
-            <a href="">
-
-                <picture>
-                    <source srcset="images/squoosh/logo.webp" type="image/webp">
-                    <img src="images/ original-img/logo.png" alt="logo">
-                </picture>
+  <body>
+    <header class="w40j2s9">
+      <div class="ue1ow">
+        <div class="s9raw">
+          <h1>
+            <a href="/">
+              <img src="https://eiris-dev.vercel.app/images/squoosh/logo.webp" alt="EIRIS" />
             </a>
-            <p class="copy">Copyright EIRIS inc All rights reserved.</p>
+          </h1>
         </div>
+        <div class="m7yf41r" data-atoms="menu-button">
+          <span class="rnexghi5"></span>
+          <span class="rnexghi5"></span>
+          <span class="rnexghi5"></span>
+        </div>
+        <div class="s1cdq7g" data-atoms="menu-items">
+          <nav class="i6f7ro4">
+            <a class="ta0i04g" href="#">concept</a>
+            <a class="ta0i04g" href="#">service</a>
+            <a class="ta0i04g" href="#">achievement</a>
+            <a class="ta0i04g" href="#">overview</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector('[data-atoms="menu-button"]');
+        const bodyEl = document.querySelector("body");
+        const menuItemsEl = document.querySelector('[data-atoms="menu-items"]');
+        const childElements = menuButton.children;
+
+        menuButton.addEventListener("click", function () {
+          bodyEl.classList.toggle("active");
+          menuItemsEl.classList.toggle("active");
+          Array.from(childElements).forEach(child => {
+            child.classList.toggle("open");
+          });
+        });
+      });
+    </script>
+
+    <section class="wtkkof4">
+      <div class="xc8srsx">
+        <p class="lh5mp2h">Essential Elements For Life</p>
+        <div class="y3sjeqo"></div>
+        <div class="s8b19hx"></div>
+        <div class="clr01h5"></div>
+        <div class="ux12hcv"></div>
+        <div class="lkfbvy"></div>
+        <img class="ehb80n9" src="https://eiris-dev.vercel.app/images/ original-img/eiris_top-min.gif" alt="GIF" />
+        <img class="cz1qw0h" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-firsr.webp" alt="" />
+      </div>
+    </section>
+    <section class="m5bnsfi">
+      <div class="ndxjabn">
+        <h2 class="r4umc1w">concept</h2>
+        <p class="bhxw3jb">
+          私たちは健康の本質を深く理解し、<br />
+          あなたの人生に彩りを添える最高の瞬間をサポートしたいと思っています。<br />
+          私たちの製品を通じて、もっと多くの方が健康に対する真の価値を感じ取っていただければ嬉しいです。<br />
+          それがEIRISの信条です。
+        </p>
+        <p class="h5n0uro">
+          We deeply understand the essence of health, <br />
+          We want to support the best moments that add color to your life.<br />
+          We hope that through our products, more and more people will realize the true value of health.<br />
+          That is the EIRIS creed.
+        </p>
+
+        <div class="cqiaba5"></div>
+        <div class="b0k0r58"></div>
+      </div>
+    </section>
+    <section class="wpw2iw">
+      <div class="ef24alu">
+        <h2 class="thndl3f">service</h2>
+        <img class="u2p6po6" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-sec3-01left.webp" alt="" />
+        <div class="qr5dim6"></div>
+
+        <div class="s79zbty">
+          <img class="bxyqpb0" src="https://eiris-dev.vercel.app/images/squoosh/sec3-01.webp" alt="" />
+          <div class="hszejqc"></div>
+          <div class="ro0w9vb">
+            <p class="pfbm3">01</p>
+            <div class="jwxljm5">
+              <h2 class="gvegtxi">ウェルネスブランド「Eiris / エイリス」の企画・製造・販売</h2>
+              <p class="ak38rio">
+                日本は未病・予防よりも「病気になってから治す」という傾向が強く、本来であれば健康な状態を維持することそのものが素晴らしいことであるはずなのに、マイナスな状態ばかりに目が向きがちです。健康になりたい、または誰かの健康を応援したいという気持ちをEIRISはサポートします。
+              </p>
+              <div class="a6abhw" onclick="redirectToLink()">
+                <a class="jy3hu8w" href="">EC SHOP </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                  <path d="M1.34277 12.6569L6.99963 7.00001L1.34277 1.34315" stroke="url(#paint0_linear_201_89)" />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_201_89"
+                      x1="2.40435"
+                      y1="9.95998"
+                      x2="-4.09864"
+                      y2="3.457"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3E0070" />
+                      <stop offset="1" stop-color="#96D3FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="a6imbe8"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="epdi8sa">
+          <div class="ds2qw">
+            <div class="w4mb50i" style="">
+              <img src="/images/squoosh/service_01.webp" alt="" />
+              <img src="/images/squoosh/service_02.webp" alt="" width="300" height="300" />
+              <img src="/images/squoosh/service_03.webp" alt="" width="300" height="300" />
+            </div>
+            <div class="um3ghb4">
+              <img src="/images/squoosh/service_04.webp" alt="" />
+              <img src="/images/squoosh/service_05.webp" alt="" />
+              <img src="/images/squoosh/service_06.webp" alt="" />
+            </div>
+          </div>
+          <!-- <h3 class="z258m6d">EIRISのこだわり</h3>
+          <div class="b5xtd">
+            <div class="wybfgl">
+              <img class="u100kzr" src="https://eiris-dev.vercel.app/images/squoosh/sec3-01-1.webp" alt="" />
+              <p class="edhfysr">
+                医師や管理栄養士監修済み<br />
+                の成分のみ使用
+              </p>
+            </div>
+            <div class="wybfgl">
+              <img class="u100kzr" src="https://eiris-dev.vercel.app/images/squoosh/sec3-01-2.webp" alt="" />
+              <p class="edhfysr">
+                60年以上の歴史がある<br />
+                老舗製薬会社のディレクション
+              </p>
+            </div>
+            <div class="wybfgl">
+              <img class="u100kzr" src="https://eiris-dev.vercel.app/images/squoosh/sec3-01-3.webp" alt="" />
+              <p class="edhfysr">
+                トップアスリートにも<br />
+                ご愛用いただいている
+              </p>
+            </div>
+          </div> -->
+        </div>
+        <div class="s79zbty byiq6md" id="achievment">
+          <img class="bxyqpb0" src="https://eiris-dev.vercel.app/images/squoosh/sec3-02.webp" alt="" />
+          <div class="ro0w9vb">
+            <p class="pfbm3">02</p>
+            <div class="jwxljm5">
+              <h2 class="gvegtxi">ハイクラスドクター転職サイト『DOCTEN』の運営</h2>
+              <p class="ak38rio">
+                マッチング後の定着率99%の業界最高水準の、医療に特化した転職支援サービスを運営しています。<br />
+                医療機関での勤務を経験したエージェントが、転職される方の持つ魅力を存分に活かせる最良な勤務先を選定し、ご提案させて頂きます。
+              </p>
+              <div class="a6abhw" onclick="redirectToLink()">
+                <a class="jy3hu8w" href="">DOCTEN </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                  <path d="M1.34277 12.6569L6.99963 7.00001L1.34277 1.34315" stroke="url(#paint0_linear_201_89)" />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_201_89"
+                      x1="2.40435"
+                      y1="9.95998"
+                      x2="-4.09864"
+                      y2="3.457"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3E0070" />
+                      <stop offset="1" stop-color="#96D3FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="a6imbe8"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s79zbty kxr1vm2">
+          <div class="oc3wc48"></div>
+          <img class="bxyqpb0" src="https://eiris-dev.vercel.app/images/squoosh/sec3-03.webp" alt="" />
+          <div class="ro0w9vb">
+            <p class="pfbm3">03</p>
+            <div class="jwxljm5">
+              <h2 class="gvegtxi">新規開業支援及び、M&A(事業承継)支援</h2>
+              <p class="ak38rio">
+                クリニックの新規開業に必要な業務を全面的にサポート。
+                物件・エリア選定、ブランディング構築(店舗デザイン・設計・施工)、事業計画書の作成、医療機器やOA機器の選定・手配、人材採用、開局後のPR・広告施策などトータルで支援いたします。
+              </p>
+              <div class="a6abhw" onclick="redirectToLink()">
+                <a class="jy3hu8w" href="#section-form">CONTACT </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                  <path d="M1.34277 12.6569L6.99963 7.00001L1.34277 1.34315" stroke="url(#paint0_linear_201_89)" />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_201_89"
+                      x1="2.40435"
+                      y1="9.95998"
+                      x2="-4.09864"
+                      y2="3.457"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3E0070" />
+                      <stop offset="1" stop-color="#96D3FF" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div class="a6imbe8"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="di8u9" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-sec3-03left.webp" alt="" />
+        <!-- <img class="jchtfl" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-sec3-right.webp" alt="" /> -->
+      </div>
+    </section>
+    <section class="e7o2f6y">
+      <div class="zvnxl3n">
+        <div>
+          <h2 class="u22q08n">news</h2>
+        </div>
+        <ul class="vewtkup">
+          <li class="coxfsxg">
+            <a href="#" class="cfqklkh">
+              <span class="o3rgzi7">2023/03</span>
+              <p class="lfek0ll">クリニックの新規開業に必要な業務を全面的にサポート</p>
+            </a>
+          </li>
+          <li class="coxfsxg">
+            <a href="#" class="cfqklkh">
+              <span class="o3rgzi7">2023/03</span>
+              <p class="lfek0ll">クリニックの新規開業に必要な業務を全面的にサポート</p>
+            </a>
+          </li>
+          <li class="coxfsxg">
+            <a href="#" class="cfqklkh">
+              <span class="o3rgzi7">2023/03</span>
+              <p class="lfek0ll">クリニックの新規開業に必要な業務を全面的にサポート</p>
+            </a>
+          </li>
+          <li class="coxfsxg">
+            <a href="#" class="cfqklkh">
+              <span class="o3rgzi7">2023/03</span>
+              <p class="lfek0ll">クリニックの新規開業に必要な業務を全面的にサポート</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="y1kane">
+      <div class="ibzhr8a">
+        <h2 class="y9vger">overview</h2>
+        <div class="zn0fdmd"></div>
+        <div class="vq2cq7">
+          <div class="d168du6">
+            <p class="qqrdeq6">社名</p>
+            <p class="dro68fj">株式会社EIRIS / EIRIS INC.</p>
+          </div>
+
+          <div class="d168du6">
+            <p class="qqrdeq6">設立</p>
+            <p class="dro68fj">2021年4月</p>
+          </div>
+
+          <div class="d168du6">
+            <p class="qqrdeq6">役員</p>
+            <p class="dro68fj">
+              代表取締役 杉山 陽介<br />
+              取締役 中村 渉<br />
+              取締役 伊藤 和也<br />
+              取締役 井上 和恵(薬剤師)
+            </p>
+          </div>
+          <div class="d168du6">
+            <p class="qqrdeq6">所在地</p>
+            <p class="dro68fj">本社:東京都港区南麻布1-17-3</p>
+          </div>
+          <div class="d168du6">
+            <p class="qqrdeq6">事業内容</p>
+            <p class="dro68fj">
+              「EIRIS」の企画・販売<br />
+              医療機関に対する各種コンサルティング ウェルネスブランド
+            </p>
+          </div>
+          <div class="d168du6 vd789ov">
+            <p class="qqrdeq6">資格</p>
+            <p class="dro68fj">有料職業紹介事業許可番号: 13-ユ-313635</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="xgbc1mo">
+      <img class="u6xdbjx" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-form-left.webp" alt="" />
+
+      <div class="kzcbz4c"></div>
+      <img class="iufv0g" src="https://eiris-dev.vercel.app/images/squoosh/wakka2.webp" alt="art" />
+
+      <div class="mhd8j5e">
+        <div class="gh31h0v">
+          <h2 class="aee005e">contact</h2>
+          <div class="c42bxpo"></div>
+        </div>
+        <form action="submit.php" method="POST" class="shl0x3k">
+          <div class="j0rnpvn">
+            <label class="zvdnncg" for="name">お名前</label>
+            <input class="v3tit50" type="text" id="name" name="name" required placeholder="必須" />
+          </div>
+
+          <div class="j0rnpvn">
+            <label class="zvdnncg" for="email">メールアドレス</label>
+            <input class="v3tit50" type="email" id="email" name="email" required placeholder="必須" />
+          </div>
+
+          <div class="j0rnpvn">
+            <label class="zvdnncg" for="email">電話番号</label>
+            <input class="v3tit50" type="email" id="email" name="email" required placeholder="必須" />
+          </div>
+          <div class="j0rnpvn">
+            <label class="zvdnncg" for="classification">分類</label>
+            <select class="lrlc90" type="classification" id="classification" name="classification" required>
+              <option value="disabled selected ">選択してください</option>
+              <option value="サンプル1">選択肢のサンプル1</option>
+              <option value="サンプル2">選択肢のサンプル2</option>
+              <option value="サンプル3">選択肢のサンプル3</option>
+              <option value="サンプル4">選択肢のサンプル4</option>
+              <option value="サンプル5">選択肢のサンプル5</option>
+            </select>
+          </div>
+          <div class="j0rnpvn">
+            <label class="zvdnncg" for="message">お問い合わせ内容</label>
+            <textarea id="message" class="yxb7og1" name="message" rows="7" required placeholder="必須"></textarea>
+          </div>
+          <input class="xligv6a" type="submit" value="送信する" class="xligv6a" />
+        </form>
+      </div>
+    </section>
+    <footer class="fpwcck4">
+      <div class="rc1st50">
+        <a href="/">
+          <img class="hrnaz24" src="https://eiris-dev.vercel.app/images/squoosh/logo.webp" alt="logo" />
+        </a>
+        <p class="zpn244q">Copyright EIRIS inc All rights reserved.</p>
+      </div>
     </footer>
+  </body>
 
-</body>
-
-<script>
-
-    //selectboxの色
-    function changeColor(hoge) {
-        if (hoge.value == 0) {
-            hoge.style.color = '';
-        } else {
-            hoge.style.color = 'black';
+  <script>
+    var props = {
+      im5lz: {},
+      ic98b: {},
+      ird1h: {},
+      ic5bw: {},
+    };
+    var ids = Object.keys(props)
+      .map(function (id) {
+        return "#" + id;
+      })
+      .join(",");
+    var els = document.querySelectorAll(ids);
+    for (var i = 0, len = els.length; i < len; i++) {
+      var el = els[i];
+      (function (props) {
+        const property = props.property_key;
+        const categoryId = findTraitAttribute(this, "category");
+        const keyNo = findTraitAttribute(this, "key");
+        const siteIdMatch = window.location.pathname.match(/sites\/(.*?)\//);
+        if (!siteIdMatch || siteIdMatch.length < 2) {
+          console.error("Failed to extract siteId from the URL.");
+          return;
         }
+        const siteId = siteIdMatch[1];
+        const query = "/api/posts?" + "siteId=".concat(siteId, "&categoryId=").concat(categoryId);
+        fetch(query)
+          .then(response => response.json()) // Parse the JSON from the response
+          .then(data => {
+            if (Array.isArray(data) && data.length > 0 && data[0].hasOwnProperty(property)) {
+              this.innerHTML = data[keyNo][property];
+            } else {
+              console.error("Invalid data format received:", data);
+            }
+          })
+          .catch(error => console.error("Fetch error:", error));
+        function findTraitAttribute(element, traitsName) {
+          while (element) {
+            const category = element.getAttribute(traitsName);
+            if (category) {
+              return category;
+            }
+            element = element.parentElement;
+          }
+          return null;
+        }
+      }).bind(el)(props[el.id]);
     }
-</script>
-
+    var items = document.querySelectorAll(".head-right");
+    for (var i = 0, len = items.length; i < len; i++) {
+      (function () {
+        // @ts-ignore
+        const currentEl = this;
+        const NAVBAR = "[data-atoms=navbar]";
+        const NAV_ITEMS = "[data-atoms=navbar-items]";
+        const transitProp = "max-height";
+        let isAnimating = false;
+        let transEndAdded = false;
+        currentEl.addEventListener("click", function (ev) {
+          ev.preventDefault();
+          if (isAnimating) return;
+          if (!currentEl) return;
+          const navItems = currentEl.closest(NAVBAR).querySelector(NAV_ITEMS);
+          if (!navItems) return;
+          toggleSlide(navItems);
+          if (!transEndAdded) {
+            navItems.addEventListener(transitEndEvent, function () {
+              isAnimating = false;
+              resetStyle(navItems, transitProp);
+            });
+            transEndAdded = true;
+          }
+        });
+        const getTransitionEvent = function () {
+          const el = document.createElement("void");
+          const transitions = {
+            transition: "transitionend",
+            OTransition: "oTransitionEnd",
+            MozTransition: "transitionend",
+            WebkitTransition: "webkitTransitionEnd",
+          };
+          for (let t in transitions) {
+            if (el.style[t] !== undefined) {
+              return transitions[t];
+            }
+          }
+        };
+        const transitEndEvent = getTransitionEvent();
+        const getElHeight = function (el) {
+          const style = window.getComputedStyle(el);
+          const elDisplay = style.display;
+          const elMaxHeight = parseInt(style[transitProp]);
+          if (elDisplay !== "none" && elMaxHeight !== 0) {
+            return el.offsetHeight;
+          }
+          el.style.height = "auto";
+          el.style.display = "block";
+          el.style.position = "absolute";
+          el.style.visibility = "hidden";
+          const height = el.offsetHeight;
+          el.style.height = "";
+          el.style.display = "";
+          el.style.position = "";
+          el.style.visibility = "";
+          return height;
+        };
+        const toggleSlide = function (el) {
+          isAnimating = true;
+          const elMaxHeight = getElHeight(el);
+          el.style.display = "block";
+          el.style.overflowY = "hidden";
+          el.style.transition = "".concat(transitProp, " 0.25s ease-in-out");
+          if (el.style[transitProp] == "" || parseInt(el.style[transitProp]) == 0) {
+            el.style[transitProp] = "0";
+            setTimeout(function () {
+              el.style[transitProp] = elMaxHeight + "px";
+            }, 10);
+          } else {
+            el.style[transitProp] = "0";
+          }
+        };
+        const resetStyle = function (el, prop) {
+          if (el.style[prop] === "0px") {
+            el.style.display = "";
+            el.style[prop] = "";
+          }
+        };
+      }).bind(items[i])();
+    }
+  </script>
 </html>
