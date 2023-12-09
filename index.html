@@ -35,10 +35,10 @@
         </div>
         <div class="s1cdq7g" data-atoms="menu-items">
           <nav class="i6f7ro4">
-            <a class="ta0i04g" href="#">concept</a>
-            <a class="ta0i04g" href="#">service</a>
-            <a class="ta0i04g" href="#">achievement</a>
-            <a class="ta0i04g" href="#">overview</a>
+            <a class="ta0i04g" href="/#concept">concept</a>
+            <a class="ta0i04g" href="/#service">service</a>
+            <a class="ta0i04g" href="/#news">news</a>
+            <a class="ta0i04g" href="/#overview">overview</a>
           </nav>
         </div>
       </div>
@@ -48,6 +48,7 @@
         const menuButton = document.querySelector('[data-atoms="menu-button"]');
         const bodyEl = document.querySelector("body");
         const menuItemsEl = document.querySelector('[data-atoms="menu-items"]');
+        const menuLinkEl = document.querySelectorAll('[data-atoms="menu-items"] a');
         const childElements = menuButton.children;
 
         menuButton.addEventListener("click", function () {
@@ -55,6 +56,16 @@
           menuItemsEl.classList.toggle("active");
           Array.from(childElements).forEach(child => {
             child.classList.toggle("open");
+          });
+        });
+
+        menuLinkEl.forEach(link => {
+          link.addEventListener("click", function () {
+            bodyEl.classList.remove("active");
+            menuItemsEl.classList.remove("active");
+            Array.from(childElements).forEach(child => {
+              child.classList.remove("open");
+            });
           });
         });
       });
@@ -72,7 +83,7 @@
         <img class="cz1qw0h" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-firsr.webp" alt="" />
       </div>
     </section>
-    <section class="m5bnsfi">
+    <section class="m5bnsfi" id="concept">
       <div class="ndxjabn">
         <h2 class="r4umc1w">concept</h2>
         <p class="bhxw3jb">
@@ -92,7 +103,7 @@
         <div class="b0k0r58"></div>
       </div>
     </section>
-    <section class="wpw2iw">
+    <section class="wpw2iw" id="service">
       <div class="ef24alu">
         <h2 class="thndl3f">service</h2>
         <img class="u2p6po6" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-sec3-01left.webp" alt="" />
@@ -133,7 +144,7 @@
         </div>
         <div class="epdi8sa">
           <div class="ds2qw">
-            <div class="w4mb50i" style="">
+            <div class="w4mb50i">
               <img src="/images/squoosh/service_01.webp" alt="" />
               <img src="/images/squoosh/service_02.webp" alt="" width="300" height="300" />
               <img src="/images/squoosh/service_03.webp" alt="" width="300" height="300" />
@@ -144,32 +155,8 @@
               <img src="/images/squoosh/service_06.webp" alt="" />
             </div>
           </div>
-          <!-- <h3 class="z258m6d">EIRISのこだわり</h3>
-          <div class="b5xtd">
-            <div class="wybfgl">
-              <img class="u100kzr" src="https://eiris-dev.vercel.app/images/squoosh/sec3-01-1.webp" alt="" />
-              <p class="edhfysr">
-                医師や管理栄養士監修済み<br />
-                の成分のみ使用
-              </p>
-            </div>
-            <div class="wybfgl">
-              <img class="u100kzr" src="https://eiris-dev.vercel.app/images/squoosh/sec3-01-2.webp" alt="" />
-              <p class="edhfysr">
-                60年以上の歴史がある<br />
-                老舗製薬会社のディレクション
-              </p>
-            </div>
-            <div class="wybfgl">
-              <img class="u100kzr" src="https://eiris-dev.vercel.app/images/squoosh/sec3-01-3.webp" alt="" />
-              <p class="edhfysr">
-                トップアスリートにも<br />
-                ご愛用いただいている
-              </p>
-            </div>
-          </div> -->
         </div>
-        <div class="s79zbty byiq6md" id="achievment">
+        <div class="s79zbty byiq6md">
           <img class="bxyqpb0" src="https://eiris-dev.vercel.app/images/squoosh/sec3-02.webp" alt="" />
           <div class="ro0w9vb">
             <p class="pfbm3">02</p>
@@ -240,7 +227,7 @@
         <!-- <img class="jchtfl" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-sec3-right.webp" alt="" /> -->
       </div>
     </section>
-    <section class="e7o2f6y">
+    <section class="e7o2f6y" id="news">
       <div class="zvnxl3n">
         <div>
           <h2 class="u22q08n">news</h2>
@@ -273,7 +260,7 @@
         </ul>
       </div>
     </section>
-    <section class="y1kane">
+    <section class="y1kane" id="overview">
       <div class="ibzhr8a">
         <h2 class="y9vger">overview</h2>
         <div class="zn0fdmd"></div>
@@ -315,7 +302,7 @@
         </div>
       </div>
     </section>
-    <section class="xgbc1mo">
+    <section class="xgbc1mo" id="contact">
       <img class="u6xdbjx" src="https://eiris-dev.vercel.app/images/squoosh/Mask group-form-left.webp" alt="" />
 
       <div class="kzcbz4c"></div>
